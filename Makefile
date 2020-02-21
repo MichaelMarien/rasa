@@ -40,7 +40,7 @@ clean:
 	rm -rf docs/_build
 
 install:
-	poetry install
+	poetry install -E full
 
 formatter:
 	poetry run black rasa tests

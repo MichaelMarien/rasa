@@ -56,7 +56,6 @@ directory = "misc"
 name = "Miscellaneous internal changes"
 showcontent = false
 
-## Setup py requirements
 [tool.poetry.dependencies]
 python = "^3.6"
 boto3 = "^1.12"

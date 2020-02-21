@@ -103,8 +103,7 @@ jobs:
       run: |
         make install-full
         export SPHINXBUILD=$(poetry run which sphinx-build)
-        echo $SPHINXBUILD
-        cd docs && make SPHINXOPTS="-W --keep-going -A html_theme=rasabaster" html
+        cd docs && make SPHINXBUILD=$SPHINXBUILD SPHINXOPTS="-W --keep-going -A html_theme=rasabaster" html
 
   test:
     name: Run Tests
